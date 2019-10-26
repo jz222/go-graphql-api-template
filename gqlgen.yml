@@ -1,0 +1,19 @@
+# .gqlgen.yml example
+#
+# Refer to https://gqlgen.com/config/
+# for detailed .gqlgen.yml documentation.
+
+schema:
+  - graphQL/schemas/inputs.graphql
+  - graphQL/schemas/types.graphql
+  - graphQL/schemas/queries.graphql
+  - graphQL/schemas/mutations.graphql
+exec:
+  filename: graphQL/generated.go
+  package: gql
+resolver:
+  filename: graphQL/resolvers/resolvers.go
+  type: Resolver
+  package: graphqlresolvers
+autobind:
+  - graphql_api/models

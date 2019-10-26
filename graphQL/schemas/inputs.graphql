@@ -1,0 +1,13 @@
+directive @isSignedIn on FIELD_DEFINITION
+
+input User {
+    email: String!
+    firstName: String!
+    lastName: String!
+    password: String!
+}
+
+input Credentials {
+    email: String!
+    password: String!
+}

@@ -1,0 +1,7 @@
+type Message {
+    message: String!
+}
+
+type JWT {
+    token: String!
+}
