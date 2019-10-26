@@ -8,7 +8,7 @@ Add an `.env` file according to the `.example.env` file. Install dependencies wi
 
 ### SignUp Mutation
 
-```
+```graphql
 mutation {
   signUp(
     input: {
@@ -25,7 +25,7 @@ mutation {
 
 ### Login Mutation
 
-```
+```graphql
 mutation {
   Login(
     input: {
@@ -42,7 +42,7 @@ mutation {
 
 Add an `Authorization` header with a valid JWT as bearer token to the request. The following protected query can only be accessed if a valid JWT is provided.
 
-```
+```graphql
 query {
   protected {
     message
